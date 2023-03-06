@@ -1,0 +1,361 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration-line: none;
+}
+
+body {
+  min-height: 2000px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 40.67px;
+  background-color: rgb(227, 227, 227);
+}
+
+header .content {
+  width: 1300px;
+  height: inherit;
+
+  margin: auto;
+  display: grid;
+  /* 26px 28px 44px 26px 100px */
+  grid-template-columns: 95px 120px 800px 95px 100px;
+  gap: 10px;
+  background-color: rgba(64, 64, 64, 0.121);
+}
+
+header .content .position {
+  display: flex;
+  place-items: center;
+  gap: 5px;
+}
+
+header .content .navs ul {
+  display: flex;
+  gap: 20px;
+}
+
+header .content .navs ul > li {
+  display: inline-block;
+  height: inherit;
+  width: auto;
+  margin: auto;
+  padding: 9px;
+}
+header .content .navs ul > li a,
+header .content .position span,
+header .content .position a,
+header .content .login span,
+header .content .login a {
+  color: black;
+}
+header .content .navs ul > li:hover {
+  background-color: orangered;
+  transition: 0.3s;
+}
+
+header .content .img img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+header .content .helper {
+  display: block;
+  text-align: center;
+}
+
+header .content .helper a {
+  display: block;
+  margin-top: 6px;
+  margin-left: 10px;
+  width: 70px;
+  height: 26px;
+  font-weight: bolder;
+
+  border-radius: 15px;
+
+  background-color: orangered;
+  color: white;
+}
+
+header .content .item {
+  height: inherit;
+}
+
+header .content .position {
+  font-size: 10px;
+}
+
+header .content .position img {
+  margin-top: 5px;
+  height: 25px;
+}
+
+header .content .login {
+  padding-top: 8px;
+  padding-left: 10px;
+}
+
+/* -------------内容------------- */
+main {
+  width: 1225px;
+  margin: auto;
+}
+
+main .main-navs {
+  border-bottom: 2px solid rgba(128, 128, 128, 0.467);
+}
+
+main .main-navs ul {
+  display: flex;
+}
+
+main .main-navs ul .item {
+  display: inline-block;
+  height: 50px;
+  margin-bottom: 5px;
+}
+
+main .main-navs ul .item:nth-of-type(1) {
+  border-bottom: 5px solid orangered;
+}
+main .main-navs ul .item a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 5px;
+  color: black;
+  font-size: 16px;
+  font-weight: 550;
+}
+
+main .content-navs {
+  height: 50px;
+  border-bottom: 5px solid orangered;
+}
+
+main .content-navs ul {
+  display: flex;
+}
+main .content-navs ul > li:nth-of-type(1) {
+  background-color: orangered;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+main .content-navs ul > li:nth-of-type(1) a {
+  color: white;
+}
+main .content-navs ul > * {
+  display: inline-block;
+  padding: 12px 45px;
+}
+main .content-navs ul > * a {
+  color: black;
+  font-size: large;
+  font-weight: 800;
+}
+
+main .detail-navs .province {
+  display: grid;
+
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 90px;
+
+  gap: 10px;
+}
+main .detail-navs .province > span {
+  text-align: center;
+  margin-top: 18px;
+  color: rgb(169, 169, 169);
+}
+main .detail-navs .province > div {
+  margin-right: auto;
+  margin-top: 8px;
+}
+main .detail-navs .province > div > span {
+  display: inline-block;
+  padding: 10px;
+}
+
+main .detail-navs .type {
+  display: grid;
+  text-align: center;
+
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 60px;
+}
+main .detail-navs .type > span {
+  margin-top: 8px;
+  color: rgb(169, 169, 169);
+}
+main .detail-navs .type > div {
+  margin-right: auto;
+  margin-top: 8px;
+}
+main .detail-navs .type > div > span {
+  padding: 10px;
+}
+
+main .detail-navs .level {
+  display: grid;
+  text-align: center;
+
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 60px;
+}
+main .detail-navs .level > span {
+  margin-top: 8px;
+  color: rgb(169, 169, 169);
+}
+main .detail-navs .level > div {
+  margin-right: auto;
+  margin-top: 8px;
+}
+main .detail-navs .level > div > span {
+  padding: 10px;
+}
+main .detail-navs .level > div > span:hover,
+main .detail-navs .province > div > span:hover,
+main .detail-navs .type > div > span:hover {
+  color: orangered;
+  cursor: pointer;
+}
+
+main .search {
+  display: flex;
+  text-align: center;
+  width: 900px;
+  height: 40px;
+}
+
+main .search .items {
+  width: 200px;
+  margin: auto;
+}
+main .search .items span {
+  color: orangered;
+}
+main .search input {
+  margin-left: auto;
+  width: 700px;
+}
+
+main .search button {
+  height: 40px;
+  width: 100px;
+  background-color: orangered;
+  border: 1px solid orangered;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  color: white;
+  font-size: large;
+}
+main .search button:hover {
+  cursor: pointer;
+}
+
+main .college {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: 850px 1fr;
+}
+
+main .college .college-rank {
+  width: 850px;
+}
+
+main .college .college-rank .college1 {
+  display: grid;
+  grid-template-columns: 80px 310px 200px repeat(2, 1fr);
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+main .college .college-rank .college1 .logo {
+}
+main .college .college-rank .college1 .logo img {
+  width: 100%;
+}
+
+main .college .college-rank .college1 div:nth-of-type(2) {
+  margin-left: 20px;
+}
+main .college .college-rank .college1 div:nth-of-type(2) h2 {
+}
+main .college .college-rank .college1 div:nth-of-type(2) h2:hover {
+  color: orangered;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+main .college .college-rank .college1 div:nth-of-type(2) span {
+  margin-right: 10px;
+
+  border: 1px solid rgb(156, 156, 156);
+  border-radius: 4px;
+  font-size: 14px;
+  color: rgb(156, 156, 156);
+}
+main .college .college-rank .college1 div:nth-of-type(2) h2 {
+  margin-bottom: 10px;
+}
+main .college .college-rank .college1 div:nth-of-type(2) h2 > a {
+  color: black;
+}
+main .college .college-rank .college1 div:nth-of-type(2) h2 > a:hover {
+  color: orangered;
+  transition: all 0.3s;
+}
+main .college .college-rank .college1 div:nth-of-type(2) div {
+  margin-top: 5px;
+}
+main .college .college-rank .college1 div:nth-of-type(3),
+main .college .college-rank .college1 div:nth-of-type(4),
+main .college .college-rank .college1 div:nth-of-type(5) {
+  margin-top: 30px;
+}
+main .college .college-rank .college1 div:nth-of-type(3) span,
+main .college .college-rank .college1 div:nth-of-type(4) {
+  font-size: small;
+  color: rgb(156, 156, 156);
+}
+
+main .college .college-rank .college1 div:nth-of-type(5) {
+  text-align: center;
+}
+main .college .college-rank .college1 div:nth-of-type(5) button {
+  width: 85px;
+  height: 35px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid orangered;
+  border-radius: 5px;
+}
+main .college .college-rank .college1 div:nth-of-type(5) button span {
+  color: orangered;
+  font-size: 15px;
+}
+
+main .college .college-rank .college1 div:nth-of-type(5) button:hover {
+  background-color: orangered;
+  transition: 0.3s;
+}
+main .college .college-rank .college1 div:nth-of-type(5) button:hover span {
+  color: white;
+  transition: 0.3s;
+}
+
+main .college .ad {
+  width: inherit;
+  height: 140px;
+}
+main .college .ad a {
+  width: 100%;
+}
+main .college .ad a img {
+  width: 100%;
+}
